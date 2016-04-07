@@ -304,6 +304,10 @@ COMMON_SRC = build_config.c \
 		   io/rc_curves.c \
 		   io/serial.c \
 		   io/serial_1wire.c \
+		   io/serial_1wire_vcp.c \
+		   io/serial_4way.c \
+		   io/serial_4way_avrootloader.c \
+		   io/serial_4way_stk500v2.c \
 		   io/serial_cli.c \
 		   io/serial_msp.c \
 		   io/statusindicator.c \
@@ -352,7 +356,8 @@ VCP_SRC = \
 		   vcp/usb_istr.c \
 		   vcp/usb_prop.c \
 		   vcp/usb_pwr.c \
-		   drivers/serial_usb_vcp.c
+		   drivers/serial_usb_vcp.c \
+		   drivers/usb_io.c
 
 NAZE_SRC = startup_stm32f10x_md_gcc.S \
 		   drivers/accgyro_adxl345.c \
